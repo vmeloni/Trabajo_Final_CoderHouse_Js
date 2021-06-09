@@ -9,7 +9,6 @@ function gracias(){
         $("#myModal").modal('toggle');
      }
 }
-
 function alerta(){
     var email = document.getElementById("email").value;
     if (!email.includes("@")) {
@@ -32,7 +31,6 @@ function gracias_suscripcion(){
         $("#myModal-suscripcion").modal('toggle');
      }
 }
-
 function alerta_suscripcion(){
     var email = document.getElementById("email_suscripcion").value;
     if (!email.includes("@")) {

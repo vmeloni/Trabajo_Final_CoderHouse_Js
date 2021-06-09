@@ -9,11 +9,8 @@
   <meta name="author" content="">
 
   <title>Chipa La Corren</title>
-  <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-  <!-- Custom styles for this template -->
   <link href="css/shop-homepage.css" rel="stylesheet">
 
   
@@ -32,7 +29,7 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="index.html">Comprar
+						<a class="nav-link" id="comprar">Comprar
 						<span class="sr-only">(current)</span>
 						</a>
 					</li>
@@ -89,7 +86,7 @@
 		<div class="hero-text">
 			<h1 class="chipa-H1" id="titulo-hero">Chipá de Corrientes al mundo</h1>
 			<p class="chipa-subtitulo" id="titulo-hero-1"> Listo para hornear y/o freezar</p>
-			<div  id="boton-hero"><button type="button"><a id="aref">Comprar</a></button></div>
+			<div  id="boton-hero"><button type="button"><a id="comprar-chipa">Comprar</a></button></div>
 		</div>
 	</div>
 
@@ -150,11 +147,9 @@
 						<input type="text" id="myInput" onkeyup="buscadorBarrios()" placeholder="Búsqueda por barrio.." title="Busqueda por barrio">
 					</div>
 					<div class="row">
-						<div class="col-3 header-zona"> Zona </div>
-						<div class="col-3 header-zona"> Precio</div>
-						<div class="col-3 header-zona"> Tiempo de entrega</div>
-						<div class="col-3 header-zona"> </div>
-
+						<div class="col-4 header-zona"> Zona </div>
+						<div class="col-4 header-zona"> Precio</div>
+						<div class="col-4 header-zona"> Tiempo de entrega</div>
 					</div>
 					<ul id="listaDelivery"></ul>
 					<div class="texto-recordatorio"> *** Pick up y delivery sin cargo solo por San Telmo </div>

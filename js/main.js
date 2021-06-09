@@ -156,36 +156,6 @@ function carrito_desde_storage(){
     }) ;
 }
 
-function aplicaPromo(precioFinal){
-    let diezP= parseInt(precioFinal*0.10);
-    let nuevoPrecioFinalDiezP = parseInt(precioFinal - (diezP))
-    
-    let veinteP= parseInt(precioFinal*0.10);
-    let nuevoPrecioFinalVeinteP = parseInt(precioFinal - (veinteP))
-    
-    if  (precioFinal > 4000 ){
-        $("#misdescuentos").append(`
-        <H6> ¡DESCUENTAZO! </H6>
-        <div class="texto-recordatorio">Tenés un descuento del 10% por tu compra superior a $ 4.000,00.
-        </div>
-        <div class="rows texto-recordatorio texto-descuento"> Descuento 10%: -${diezP}
-        </div>
-        <div class="rows texto-recordatorio">Nuevo valor compra :$ ${nuevoPrecioFinalDiezP}
-        </div>`);
-        $("#misdescuentos").css({"color": "green"})
-    }
-    if  (precioFinal > 8000 ){
-        $("#misdescuentos").append(`
-        <H6> ¡DESCUENTAZO! </H6>
-        <div class="texto-recordatorio">Tenés un descuento del 20% por tu compra superior a $ 8.000,00.
-        </div>
-        <div class="rows texto-recordatorio texto-descuento"> Descuento 20%: -${veinteP}
-        </div>
-        <div class="rows texto-recordatorio">Nuevo valor compra :$ ${nuevoPrecioFinalVeinteP}
-        </div>`)
-    }
-}
-
 // Contenido para HTML
 
 function freezar(){
@@ -437,7 +407,17 @@ $(document).ready(function(){
 }
 
 function scrollDivProductos (){
-    $("#aref").click(
+    $("#comprar").click(
+        function(){
+            $('html, body').animate({
+                scrollTop: $("#container-productos").offset().top
+            }, 1000);
+        }
+    )
+}
+
+function scrollDivButtonHeroComprar (){
+    $("#comprar-chipa").click(
         function(){
             $('html, body').animate({
                 scrollTop: $("#container-productos").offset().top
@@ -559,6 +539,7 @@ formulario_contacto();
 footer();
 iniciarNotificacion();
 scrollDivProductos();
+scrollDivButtonHeroComprar();
 scrollDivFreezarChipa();
 scrollDivSustentabilidad();
 scrollDivComoCocinar();
