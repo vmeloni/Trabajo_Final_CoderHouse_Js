@@ -1,0 +1,908 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template/shop-homepage)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&family=Montserrat:wght@500&display=swap');
+
+:root {
+  --negro: #2d2b2b;
+  --verdeclaro: #a6eb40;
+  --verde: #7cbc40;
+  --rosa: #bc4a8e;
+  --amarillo: #f4dc78;
+  --amarilloagua:#efe8d0;
+  --verdeagua:#e5f4ce;
+  --rosaagua:#e2c0d6;
+
+}
+
+body, html {
+  padding-top:60px;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0.5)), url("/galeria/Img-Chipa-La-Corres-HI.png");
+  height: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-image-cocinar {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0.5)), url("/galeria/Img-chipa-preparar.png");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  border-radius: 5px;
+  background-color:var(--rosa);
+  color:var(--amarillo);
+  font-family: 'Londrina Solid', cursive;
+  letter-spacing: 0.05em;
+  font-size: 1.2em;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: var(--verde);
+  color:var(--amarillo);
+}
+
+#aref{
+  color: white;
+  font-size: 1em;
+
+}
+
+#aref:hover{
+  text-decoration: none;
+  color:white;
+}
+
+.chipa-H1 {
+  color:beige;
+  font-family: 'Londrina Solid', cursive;
+  letter-spacing: 0.05em;
+}
+
+.chipa-subtitulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9em;
+  color:beige;
+}
+
+.navbar {
+  background-color: var(--rosa);
+}
+.chipa {
+  font-family: 'Londrina Solid', cursive;
+  letter-spacing: 0.1em;
+  font-size: 2.2em;
+  color:var(--amarillo);
+}
+
+.lacorren {
+  font-family: 'Londrina Solid', cursive;
+  letter-spacing: 0.1em;
+  font-size: 1.1em;
+  color:var(--amarillo);
+}
+
+.nav-item {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 0.9em;
+}
+
+.principal-contenido{
+  margin-top:10px;
+
+}
+
+.section-title {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 2em;
+  color:var(--negro);
+  margin-bottom:50px;
+  text-align: center;
+  letter-spacing: 0.05em;}
+
+
+.section2-title {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 2em;
+  color:var(--rosa);
+  text-align: center;
+  letter-spacing: 0.05em;}
+
+.button {
+  border-radius: 5px;
+  border-color: transparent;
+  background-color: #24a0ed;
+  margin-top:10px;
+  margin-bottom:5px;
+  padding: 5px;
+}
+
+
+.estilo-h3{
+  margin-top:50px;
+  margin-bottom:50px;
+}
+.estilo-resumen{
+  margin-top:100px;
+  margin-bottom:100px;
+}
+
+.rows{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+#misenvios{
+  margin-top: 20px;
+}
+
+.texto-recordatorio{
+  font-size: 0.7em;
+  color:lightslategrey;
+  font-style: italic;
+  font-size: 0.8em;
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.texto-rojo{
+ color: red;
+ font-style: italic;
+ font-size: 0.7em;
+ font-family: 'Montserrat', sans-serif;
+ margin-top:5px;
+
+}
+
+.texto-negrita{
+  font-weight: bold;
+}
+
+.titulo-texto{
+  font-size: 1em;
+  color:var(--negro);
+}
+
+.formulario {
+  position:relative;
+  z-index: 1;
+}
+
+.forminterno{
+  padding-bottom: 150px;
+}
+
+#contenido {
+  margin-bottom: 50px;
+  list-style: none;
+  font-size: 1em;
+}
+
+
+.card-animation{
+  box-shadow: 0;
+  transition: 0.3s;
+  padding:8px;
+  border-radius: 5px;
+}
+
+.card-animation:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-titulo {
+  margin:auto;
+  display:block;
+  color:#bc4a8e;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+}
+
+.card-subtitulo {
+  text-align: center;
+  font-size: 0.7em;
+  color:var(--negro);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-footer{
+  margin-top: 10px;
+}
+
+.precio {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.7em;
+}
+
+.precio-aclaracion{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  color:grey;
+
+}
+.footer-titulo{
+  color:var(--verde);
+  font-size: 0.7em;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom:10px;
+
+}
+
+.footer-copyright{
+  margin-top:5px;
+  font-size: 0.6em;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+}
+
+.text-footer{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7em;
+  color: grey;
+  text-decoration: none;
+  
+}
+.text-footer:hover{
+  text-decoration: none;
+  color: var(--rosa);
+}
+
+.datos-footer{
+  margin-top:10px;
+}
+
+.chipa-button {
+  margin:auto;
+  display:block;
+  border: none;
+  border-radius: 5px;
+  background-color:var(--rosa);
+  color:var(--amarillo);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.chipa-button:hover {
+  background-color: var(--negro);
+  color:var(--amarillo);
+}
+
+#suscribite{
+  text-align: left;
+  font-size: 1em;
+  position:relative;
+  z-index: 1;
+}
+
+.arrow{
+  color:var(--amarillo)
+}
+
+.arrow:hover{
+  color:var(--negro);
+}
+
+
+.titulo-suscripcion {
+  font-size: 1em;
+  color:#f4dc78;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.texto-suscripcion {
+  font-size: 0.7em;
+  color:#f4dc78;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+  margin-top:10px;
+}
+
+.button-suscripcion{
+  background-color:var(--verde);
+  color:white;
+  border-color: var(--verde);
+  margin-top:0px;
+}
+
+.button-suscripcion:hover{
+  background-color:var(--rosa);
+  color:white;
+  border-color:var(--rosa);
+
+}
+
+.button-container{
+  margin-top:30px;
+}
+
+#container_mensaje {
+display:none
+}
+
+.copyright{
+  font-size: 0.6em;
+  text-align: center;
+  padding:3px;
+  background-color:black;
+  color:grey;
+}
+
+.chipa1-button {
+  margin:auto;
+  display:block;
+  border: none;
+  border-radius: 5px;
+  background-color:var(--negro);
+  color:var(--amarillo);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.chipa1-button:hover {
+  background-color: var(--amarillo);
+  color:var(--negro);
+}
+
+.div-participar-button{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.modal-title{
+  font-family: 'Montserrat', sans-serif;
+  color:var(--negro);
+  letter-spacing: 0.01em;
+
+}
+
+.modal-body{
+  color:var(--negro);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6em;
+  letter-spacing: 0.01em;
+
+}
+
+.lista-sabores{
+  text-align: left;
+  list-style: none;
+}
+
+.dropdown-menu {
+  width: 300px;
+  font-size: 0.9em;
+  padding-top:20px;
+  padding-bottom:20px;
+  -webkit-box-shadow: 10px 10px 6px -4px rgba(56,56,56,0.36);
+  -moz-box-shadow: 10px 10px 6px -4px rgba(56,56,56,0.36);
+  box-shadow: 10px 10px 6px -4px rgba(56,56,56,0.36);
+}
+
+
+#listado_zonas{
+  margin-top:20px;
+  margin-left: 250px;
+}
+
+.titulo-zonas{
+  background-color: var(--verde);
+  font-family: 'Montserrat', sans-serif;
+  color:var(--amarillo);
+  padding-top:28px;
+  padding-left:150px;
+  font-size: 1.5em;
+}
+
+.button-zonas {
+  background-color: var(--verde);
+  padding-top:25px;
+  padding-bottom:25px;
+  padding-right: 50px;
+}
+
+.alert.success {
+  position:absolute;
+  z-index: 2;
+  left: 30%;
+  top: -25px;
+  background-color:var(--amarillo);
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: var(--negro);
+}
+
+.closebtn {
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.select-style{
+  width: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.label-style{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  color:#2d2b2b;
+  margin-left: 25px;
+}
+
+#carrito-de-compras-icono{
+  margin-left: 20px;
+}
+
+.badge{
+  position: absolute;
+  top: 20px;
+  right: -7px;
+  padding: 5px;
+  border-radius: 50px;
+  background: var(--amarillo);
+  color: var(--rosa);}
+
+.items-carrito {
+  font-size: 0.8em;
+  margin-left:20px;
+  margin-top:10px;
+  font-family: 'Montserrat', sans-serif;
+  color:grey;
+
+}
+
+.items-carrito-total{
+  font-size: 0.9em;
+  color:var(--negro);
+  margin-left: 20px;
+  margin-top: 5px;
+  font-weight: bolder;
+}
+
+.lista-carrito{
+  font-size: 0.9em;
+  color:var(--negro);
+  margin-top: 10px;
+}
+
+.hrsolid {
+  border-top: 1px solid rgb(233, 233, 233);
+  width: 250px;
+  margin-top:5px;
+}
+
+.button-checkout{
+  border-radius: 5px;
+  background-color:var(--rosa);
+  border:none;
+  padding:10px;
+  margin-left:0px;
+}
+
+.button-checkout:hover{
+  background-color:var(--negro);
+}
+
+.link-checkout{
+  color: white;
+  text-decoration: none;
+}
+
+.link-checkout:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.style-lista{
+  border-radius:5px;
+  border: 1px solid rgb(233, 233, 233);
+  margin-top:8px;
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+
+.ver-ofertas{
+  margin-top: 100px;
+  margin-bottom:100px;
+  background-color: var(--amarillo);
+  padding:20px;
+
+}
+
+.button-ver-ofertas{
+  margin:auto;
+  display: block;
+  border-radius: 5px;
+  background-color:var(--rosa);
+  border:none;
+  padding:10px;
+  color:white;
+}
+
+.button-ver-ofertas:hover{
+  background-color:var(--negro);
+  color:white;
+}
+.btn-of{
+  width:300px;
+}
+
+.titulo-ver-ofertas{
+  text-align: center;
+  font-size: 1em;
+  color:var(--rosa);
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom:10px;
+
+}
+
+.items-cocinar{
+  font-size: 0.9em;
+  color:var(--negro);
+  padding-top:10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#conocenosDiv{
+  padding:30px;
+  background-color: var(--rosaagua);
+}
+
+.conocenos-texto{
+  margin:auto;
+  display:block;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 40px;
+  font-size: 0.9em;
+  font-style: italic;
+  color:var(--negro);
+  line-height: 2em;
+  width: 400px;
+}
+
+.conocenos-saludo{
+  margin-top:10px;
+  text-align: center;
+  font-style: normal;
+  font-family: 'Londrina Solid', cursive;
+  color:var(--rosa);
+  font-size: 2em;
+  letter-spacing: 0.06em;
+  font-weight: bold;
+  padding-top:15px;
+}
+
+.link-div{
+  margin-top:40px;
+  text-align: center;
+}
+
+.link-insta{
+  font-family: 'Londrina Solid', cursive;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  font-size: 1.3em;
+  color:var(--negro);
+  margin-bottom:5px;
+}
+.link-insta:hover{
+  color:var(--rosa);
+  text-decoration: none;
+}
+
+.seguime-insta{
+  font-size: 0.8em;
+  font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.foto{
+  margin:auto;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.conocenos-items{
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  color:var(--negro);
+  line-height: 2em;
+}
+
+
+#cocina-chipa{
+  padding-top:150px;
+}
+
+
+
+.popup-overlay {
+  /*Hides pop-up when there is no "active" class*/
+  visibility: hidden;
+  position: absolute;
+  z-index: 3;
+  background-color:var(--amarillo);
+  border: 3px solid #666666;
+  width: 20%;
+  height: 20%;
+  left: 25%;
+}
+
+.popup-overlay.active {
+  visibility: visible;
+  text-align: center;
+}
+
+.popup-content {
+  visibility: hidden;
+}
+
+.popup-content.active {
+  visibility: visible;
+}
+
+.title{
+  font-size: 1.3em;
+  color:var(--negro);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+
+}
+
+.modal-texto{
+  font-size: 0.9em;
+  color:var(--negro);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+
+}
+
+.modal-content{
+  padding:10px;
+}
+
+.inner{
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.botonOrdenar{
+  background-color:white;
+  border:none;
+  color:var(--negro);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+}
+
+.botonOrdenar:hover{
+  color:var(--rosa);
+}
+
+.rowBotones{
+  margin-bottom:30px;
+}
+
+.icon-card{
+  text-align: center;
+  margin-top:10px;
+
+}
+
+.card-title{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color:var(--rosa);
+}
+.card-text{
+  text-align: center;
+  line-height: 1.8em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9em;
+  margin-top:20px;
+}
+
+
+.card-sugerencia{
+  background-color: var(--amarillo);
+}
+
+.lista-coccion{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+}
+
+.tip-coccion{
+  font-size: 0.8;
+  color:grey;
+  margin-top:15px;
+  font-style: oblique;
+}
+
+.contenedorBotonSugerencia{
+  margin-top:60px;
+}
+
+.center-lista{
+  text-align: center;
+}
+
+.freezar{
+  margin:auto;
+  display: block;
+  margin-top:100px;
+  margin-bottom:50px;
+  width: 400px;
+  text-align: center;
+}
+.cocinar-link{
+  color:grey;
+  
+}
+.cocinar-link:hover{
+  color:var(--rosa)
+}
+
+#pedidos-retiros{
+  padding-top:150px;
+}
+
+.producto-title{
+  margin-top:50px;
+}
+
+#freezar-chipa{
+  padding-top: 150px;
+}
+
+#emprendimiento-sustentable{
+  padding-top: 150px;
+}
+
+#conoce-receta{
+  padding-top: 150px;
+}
+#enviar_sugerencia{
+  padding-top: 150px;
+}
+
+.retiro{
+  font-size:0.8em;
+  color:var(--negro);
+  margin-bottom: 10px;
+}
+
+#listaDelivery{
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.1em;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.header-zona{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+  color: var(--negro);
+  border-bottom: 1px solid #adadad;
+  margin-top:10px;
+}
+
+.zona-items{
+  margin-bottom:10px;
+}
+
+.maps{
+width: 100%;
+height: 100%;
+
+}
+
+.input-box{
+  margin-bottom:20px;
+}
+
+
+#myInput{
+  font-size:0.8em;
+  width: 450px;
+  height: 30px;
+}
+
+#buttonVaciar{
+  border-radius: 5px;
+  background-color:var(--verde);
+  border:none;
+  padding:10px;
+  color:white;
+}
+
+
+#buttonVaciar:hover{
+background-color:var(--negro);
+}
+.button-div{
+  padding:10px;
+}
+
+@media (max-width: 767.98px) { 
+  .section-title{
+    font-size: 1.3em;
+    color:var(--negro);
+    margin-bottom:20px;
+  }
+  .conocenos-texto{
+    width: 250px;
+  }
+  .link-div{
+    margin-bottom:20px;
+  }
+
+  .button-suscripcion{
+    margin-top:20px;
+  }
+  .input-box{
+    margin-top:20px;
+  }
+
+  #myInput{
+    width: 350px;
+    height: 30px;
+  }
+
+}
+

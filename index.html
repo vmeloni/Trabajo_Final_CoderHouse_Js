@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Chipa La Corren</title>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <!-- Custom styles for this template -->
+  <link href="css/shop-homepage.css" rel="stylesheet">
+
+  
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html"> <span class="chipa">Chipa</span> 
+			<br><span class="lacorren">La Corren</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Comprar
+						<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="pedidos" >Pedidos</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="informacion_chipa.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Sobre el chipá
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" id="cocinarchipa">Cocción</a>
+						<a class="dropdown-item" id="freezarchipa">Freezer</a>
+						<a class="dropdown-item" id="emprendimientosustentable">Emprendimiento sustentable</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="conocenos">Conocenos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="contactanos">Contacto</a>
+					</li>
+				</ul>
+			</div>
+			<div class="nav-item dropleft" id="carrito-de-compras-icono">
+				<a class="nav-link dropdown-toggle arrow" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">	
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+						<circle cx="6" cy="19" r="2" />
+						<circle cx="17" cy="19" r="2" />
+						<path d="M17 17h-11v-14h-2" />
+						<path d="M6 5l14 1l-1 7h-13" />
+					</svg>
+					<span class="badge" id="badge"></span>
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<div id="carritoEntero">
+						<div id="midetalle" class="items-carrito-total"> Carrito vacío</div>
+						<div id="subtotal" class="items-carrito"> </div>
+						<div id="carritoImpuestos" class="items-carrito">  </div>
+						<div id="carritoTotal" class="items-carrito-total"></div>
+						<div id="misdescuentos" class="items-carrito"></div>
+						<div id="mispromociones" class="items-carrito"></div>
+						<div class="row" id="misbotones">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</nav> 
+
+	<!-- Hero image -->
+	<div class="hero-image" id="hero">
+		<div class="hero-text">
+			<h1 class="chipa-H1" id="titulo-hero">Chipá de Corrientes al mundo</h1>
+			<p class="chipa-subtitulo" id="titulo-hero-1"> Listo para hornear y/o freezar</p>
+			<div  id="boton-hero"><button type="button"><a id="aref">Comprar</a></button></div>
+		</div>
+	</div>
+
+	<!-- Productos -->
+	<div class="container principal-contenido" id="container-productos">
+		<div class="section-title producto-title">Nuestros productos</div>
+     	<div class="container">
+			<div class="row rowBotones">
+				<div class="inner">
+					<button id="botonOrdenarMenor" class="botonOrdenar">
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sort-ascending-numbers" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2d2b2b" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+							<path d="M4 15l3 3l3 -3" />
+							<path d="M7 6v12" />
+							<path d="M17 3a2 2 0 0 1 2 2v3a2 2 0 1 1 -4 0v-3a2 2 0 0 1 2 -2z" />
+							<circle cx="17" cy="16" r="2" />
+							<path d="M19 16v3a2 2 0 0 1 -2 2h-1.5" />
+						  </svg> Ordenar de menor a menor precio
+					</button>
+				</div>
+				<div class="inner">
+					<button id="botonOrdenarMayor" class="botonOrdenar">
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sort-descending-numbers" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2d2b2b" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+							<path d="M4 15l3 3l3 -3" />
+							<path d="M7 6v12" />
+							<path d="M17 14a2 2 0 0 1 2 2v3a2 2 0 1 1 -4 0v-3a2 2 0 0 1 2 -2z" />
+							<circle cx="17" cy="5" r="2" />
+							<path d="M19 5v3a2 2 0 0 1 -2 2h-1.5" />
+						  </svg> Ordenar de mayor a menor precio</button>
+				</div>
+				<div class="inner">
+					<button id="botonOrdenarAlfabeto" class="botonOrdenar">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sort-ascending-letters" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2d2b2b" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+							<path d="M15 10v-5c0 -1.38 .62 -2 2 -2s2 .62 2 2v5m0 -3h-4" />
+							<path d="M19 21h-4l4 -7h-4" />
+							<path d="M4 15l3 3l3 -3" />
+							<path d="M7 6v12" />
+					</svg> Ordenar alfabéticamente</button>
+				</div>
+			</div>
+     		<div class="row" id="productos"></div>
+     	</div>
+    </div>
+
+	<!-- Pedidos -->
+	<div id="pedidos-retiros"></div>
+	<div class="container-fluid" id="pedidos-contenido">
+		<div class="container">
+			<div class="section-title">Pedidos</div>
+			<div class="row">
+				<div class="col-lg-6 mx-auto d-block">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13133.08897727471!2d-58.379034281626886!3d-34.62255988573653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb2d125e1c01%3A0xacd97607979875ab!2sSan%20Telmo%2C%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1623035213100!5m2!1sen!2sar" class="maps" style="border:0;" allowfullscreen="" loading="lazy"></iframe>	
+				</div>
+				<div class="col-lg-6">
+					<div class="input-box">
+						<input type="text" id="myInput" onkeyup="buscadorBarrios()" placeholder="Búsqueda por barrio.." title="Busqueda por barrio">
+					</div>
+					<div class="row">
+						<div class="col-3 header-zona"> Zona </div>
+						<div class="col-3 header-zona"> Precio</div>
+						<div class="col-3 header-zona"> Tiempo de entrega</div>
+						<div class="col-3 header-zona"> </div>
+
+					</div>
+					<ul id="listaDelivery"></ul>
+					<div class="texto-recordatorio"> *** Pick up y delivery sin cargo solo por San Telmo </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cocción -->
+	<div id="cocina-chipa"></div>
+	<div class="container principal-contenido" id="cardCoccion" ></div>
+
+	<!-- Freezer -->
+	<div id="freezar-chipa"></div>
+	<div class="container-fluid" id="divFreezer">
+	</div>
+
+	<!-- Sustentabilidad -->
+	<div id="emprendimiento-sustentable"></div>
+	<div class="container-fluid" id="divSustentable">
+
+	</div>
+
+	<!-- Conocenos -->
+	<div id="conoce-receta"></div>
+	<div class="container-fluid" id="conocenosDiv">
+		<div class="container">
+			<div class="row" id="contenidoConocenos"></div>
+		</div>
+	</div>
+
+	<!-- AJAX Mercado Libre-->
+	<div class="ver-ofertas">
+			<div class="container">
+				<div class="section2-title">Madu 10% off</div>
+				<div class="titulo-ver-ofertas">Madu está en sale ¡Armá tu equipo de mate para acompañar tus chipá!</div>
+				<button onclick="traerDatos(`madu`)" class="button-ver-ofertas btn-block btn-of" id="button-ver-ofertas" data-toggle="modal" data-target="#modalMeli">Ver ofertas</button>
+			</div>
+	</div>
+	<div class="container">
+	</div>	
+
+	<!-- Formulario Contactanos -->
+	<div id="enviar_sugerencia"></div>
+	<div id="formulario_contacto">
+	</div>
+
+	<!-- Modal Formulario Contactanos -->
+	<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="title">Mensaje recibido</div>
+			<div class="modal-texto">
+			Te contactaremos a la brevedad
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<!-- Modal AJAX Mercado Libre -->
+	<div id="modalMeli" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<div id="mercadolibre"></div>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Suscripción -->
+	<div class="modal fade" id="myModal-suscripcion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+		  <div class="modal-content">
+			  <div class="title">Suscripción exitosa</div>
+			<div class="modal-texto">
+			  Pronto te enviaremos novedades
+			</div>
+		  </div>
+		</div>
+	</div>
+
+  <!-- Footer -->
+  <footer class="py-3 bg-dark" id="footer">
+  </footer>
+  <div class="copyright"> Copyright &copy; Chipá La Corren 2021</div>
+
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+<script src="js/producto.js"></script>
+<script src="js/mercadolibre.js"></script>
+<script src="js/formulario.js"></script>
+<script src="js/zonas.js"></script>
+<script src="js/main.js"></script>
+
